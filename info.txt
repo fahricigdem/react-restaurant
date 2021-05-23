@@ -11,3 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 in index.js
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
+
+router 
+>yarn add react-router-dom@4.2.2
