@@ -8,7 +8,7 @@ function About(props) {
     const RenderLeader = ({ leader }) => {
         return (
             <Media tag="li" >
-                <Media left top style={{ padding: '1rem 1rem 1rem 0' }}>
+                <Media left top style={{ padding: '.3rem 1rem 1rem 0' }}>
                     <Media object src={'react-restaurant' + leader.image} alt={leader.name} />
                 </Media>
                 <Media body>
@@ -16,7 +16,7 @@ function About(props) {
                         {leader.name}
                     </Media>
                     <p>{leader.designation}</p>
-                    <p>{leader.description}</p>
+                    <p className="d-none d-sm-block">{leader.description}</p>
                 </Media>
             </Media>
         )
