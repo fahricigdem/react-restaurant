@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/react-restaurant/static/css/main.0ce36cd6.chunk.css",
-    "main.js": "/react-restaurant/static/js/main.72e24971.chunk.js",
-    "main.js.map": "/react-restaurant/static/js/main.72e24971.chunk.js.map",
-    "runtime-main.js": "/react-restaurant/static/js/runtime-main.5f288779.js",
-    "runtime-main.js.map": "/react-restaurant/static/js/runtime-main.5f288779.js.map",
+    "main.js": "/react-restaurant/static/js/main.207fb2ac.chunk.js",
+    "main.js.map": "/react-restaurant/static/js/main.207fb2ac.chunk.js.map",
+    "runtime-main.js": "/react-restaurant/static/js/runtime-main.064cc7bc.js",
+    "runtime-main.js.map": "/react-restaurant/static/js/runtime-main.064cc7bc.js.map",
     "static/css/2.b77c4de3.chunk.css": "/react-restaurant/static/css/2.b77c4de3.chunk.css",
-    "static/js/2.f74a92fc.chunk.js": "/react-restaurant/static/js/2.f74a92fc.chunk.js",
-    "static/js/2.f74a92fc.chunk.js.map": "/react-restaurant/static/js/2.f74a92fc.chunk.js.map",
-    "static/js/3.cfbc8cc6.chunk.js": "/react-restaurant/static/js/3.cfbc8cc6.chunk.js",
-    "static/js/3.cfbc8cc6.chunk.js.map": "/react-restaurant/static/js/3.cfbc8cc6.chunk.js.map",
+    "static/js/2.8d73de91.chunk.js": "/react-restaurant/static/js/2.8d73de91.chunk.js",
+    "static/js/2.8d73de91.chunk.js.map": "/react-restaurant/static/js/2.8d73de91.chunk.js.map",
+    "static/js/3.feee1354.chunk.js": "/react-restaurant/static/js/3.feee1354.chunk.js",
+    "static/js/3.feee1354.chunk.js.map": "/react-restaurant/static/js/3.feee1354.chunk.js.map",
     "index.html": "/react-restaurant/index.html",
     "static/css/2.b77c4de3.chunk.css.map": "/react-restaurant/static/css/2.b77c4de3.chunk.css.map",
     "static/css/main.0ce36cd6.chunk.css.map": "/react-restaurant/static/css/main.0ce36cd6.chunk.css.map",
-    "static/js/2.f74a92fc.chunk.js.LICENSE.txt": "/react-restaurant/static/js/2.f74a92fc.chunk.js.LICENSE.txt",
+    "static/js/2.8d73de91.chunk.js.LICENSE.txt": "/react-restaurant/static/js/2.8d73de91.chunk.js.LICENSE.txt",
     "static/media/font-awesome.css": "/react-restaurant/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.5f288779.js",
+    "static/js/runtime-main.064cc7bc.js",
     "static/css/2.b77c4de3.chunk.css",
-    "static/js/2.f74a92fc.chunk.js",
+    "static/js/2.8d73de91.chunk.js",
     "static/css/main.0ce36cd6.chunk.css",
-    "static/js/main.72e24971.chunk.js"
+    "static/js/main.207fb2ac.chunk.js"
   ]
 }
