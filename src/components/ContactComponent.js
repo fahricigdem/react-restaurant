@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Form, Label, FormGroup, Input, Col, FormFeedback } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Form, Label, FormGroup, Input, Col, FormFeedback, FormText } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
 class Contact extends Component {
@@ -123,6 +123,7 @@ class Contact extends Component {
                                         onBlur={this.handleBlur('firstname')}
                                         onChange={this.handleInputChange} />
                                     <FormFeedback>{errors.firstname}</FormFeedback>
+                                    <FormText>Minimum 3 Maximum 10 characters</FormText>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -136,6 +137,7 @@ class Contact extends Component {
                                         onBlur={this.handleBlur('lastname')}
                                         onChange={this.handleInputChange} />
                                     <FormFeedback>{errors.lastname}</FormFeedback>
+                                    <FormText>Minimum 3 Maximum 10 characters</FormText>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -149,6 +151,7 @@ class Contact extends Component {
                                         onBlur={this.handleBlur('telnum')}
                                         onChange={this.handleInputChange} />
                                     <FormFeedback>{errors.telnum}</FormFeedback>
+                                    <FormText>Only numbers</FormText>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -162,6 +165,7 @@ class Contact extends Component {
                                         onBlur={this.handleBlur('email')}
                                         onChange={this.handleInputChange} />
                                     <FormFeedback>{errors.email}</FormFeedback>
+                                    <FormText>Only Valid Email</FormText>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -174,6 +178,7 @@ class Contact extends Component {
                                                 onChange={this.handleInputChange} /> {' '}
                                             <strong>May we contact you?</strong>
                                         </Label>
+                                        <FormText>Optional</FormText>
                                     </FormGroup>
                                 </Col>
                                 <Col md={{ size: 3, offset: 1 }}>
@@ -183,6 +188,7 @@ class Contact extends Component {
                                         <option>Tel.</option>
                                         <option>Email</option>
                                     </Input>
+                                    <FormText>Optional</FormText>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -193,13 +199,15 @@ class Contact extends Component {
                                         value={this.state.message}
                                         onChange={this.handleInputChange}></Input>
                                 </Col>
+                                <FormText>Optional</FormText>
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{ size: 10, offset: 2 }}>
                                     <Button type="submit" color="primary">
                                         Send Feedback
-                    </Button>
+                                    </Button>
                                 </Col>
+                                <FormText>Your Infos will not be sendet actually!</FormText>
                             </FormGroup>
                         </Form>
                     </div>
