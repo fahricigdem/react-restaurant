@@ -198,16 +198,18 @@ class Contact extends Component {
                                         rows="12"
                                         value={this.state.message}
                                         onChange={this.handleInputChange}></Input>
+                                    <FormText>Optional</FormText>
                                 </Col>
-                                <FormText>Optional</FormText>
+
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{ size: 10, offset: 2 }}>
                                     <Button type="submit" color="primary">
                                         Send Feedback
                                     </Button>
+                                    <FormText>Your Infos will not be sendet actually!</FormText>
                                 </Col>
-                                <FormText>Your Infos will not be sendet actually!</FormText>
+
                             </FormGroup>
                         </Form>
                     </div>
