@@ -21,8 +21,8 @@ const RenderDish = (dish) => {
     )
 }
 
-const RenderComments = (dishComments) => {
-    const comments = dishComments.map(comment =>
+const RenderComments = ({ comments, addComment, dishId }) => {
+    const dishComments = comments.map(comment =>
         <li key={comment.id}>
             <p>{comment.comment} (Dish Nu: {comment.dishId})</p>
             <p>-- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
@@ -32,9 +32,9 @@ const RenderComments = (dishComments) => {
         <div className="col-12 col-md-5 m-1">
             <h4>Comments</h4>
             <ul className="list-unstyled">
-                {comments}
+                {dishComments}
             </ul>
-            <CommentForm />
+            <CommentForm dishId={dishId} addComment={addComment} />
         </div>
     )
 }
@@ -50,8 +50,7 @@ class CommentForm extends Component {
 
     handleSubmit = (values) => {
         this.toggleModal();
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
+        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
     }
 
     render() {
@@ -96,9 +95,9 @@ class CommentForm extends Component {
                                     />
                                 </Row>
                                 <Row className="form-group">
-                                    <Label htmlFor="message" >Comment</Label>
+                                    <Label htmlFor="comment" >Comment</Label>
 
-                                    <Control.textarea model=".message" id="message" name="message"
+                                    <Control.textarea model=".comment" id="comment" name="comment"
                                         rows="6"
                                         className="form-control" />
                                 </Row>
@@ -115,8 +114,7 @@ class CommentForm extends Component {
 }
 
 
-const DishDetail = ({ dish
-    , comments }) => {
+const DishDetail = ({ dish, comments, addComment }) => {
     return (
         <div className="container" >
             <div className="row">
@@ -131,7 +129,10 @@ const DishDetail = ({ dish
             </div>
             <div className="row">
                 {RenderDish(dish)}
-                {RenderComments(comments)}
+                <RenderComments comments={comments}
+                    addComment={addComment}
+                    dishId={dish.id}
+                />
             </div>
         </div>
     );
