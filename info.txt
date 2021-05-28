@@ -21,3 +21,9 @@ redux
 
 redux-form 
 >yarn add react-redux-form@1.16.8
+
+redux-thunk 
+>yarn add redux-thunk@2.2.0
+>yarn add redux-logger@3.0.6
+
+
