@@ -27,3 +27,6 @@ redux-thunk
 >yarn add redux-logger@3.0.6
 
 
+json-server 
+>npm install json-server -g
+>json-server --watch db.json -p 3001 -d 2000   --->(2 seconds delay)
