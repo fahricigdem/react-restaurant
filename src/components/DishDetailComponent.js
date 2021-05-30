@@ -23,7 +23,7 @@ const RenderDish = (dish) => {
     )
 }
 
-const RenderComments = ({ comments, addComment, dishId }) => {
+const RenderComments = ({ comments, postComment, dishId }) => {
     const dishComments = comments.map(comment =>
         <li key={comment.id}>
             <p>{comment.comment} (Dish Nu: {comment.dishId})</p>
@@ -36,7 +36,7 @@ const RenderComments = ({ comments, addComment, dishId }) => {
             <ul className="list-unstyled">
                 {dishComments}
             </ul>
-            <CommentForm dishId={dishId} addComment={addComment} />
+            <CommentForm dishId={dishId} postComment={postComment} />
         </div>
     )
 }
@@ -52,7 +52,7 @@ class CommentForm extends Component {
 
     handleSubmit = (values) => {
         this.toggleModal();
-        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
+        this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
     }
 
     render() {
@@ -116,7 +116,7 @@ class CommentForm extends Component {
 }
 
 
-const DishDetail = ({ dish, isLoading, errMess, comments, addComment }) => {
+const DishDetail = ({ dish, isLoading, errMess, comments, postComment }) => {
 
     if (isLoading) {
         return (
@@ -152,7 +152,7 @@ const DishDetail = ({ dish, isLoading, errMess, comments, addComment }) => {
                 <div className="row">
                     {RenderDish(dish)}
                     <RenderComments comments={comments}
-                        addComment={addComment}
+                        postComment={postComment}
                         dishId={dish.id}
                     />
                 </div>
