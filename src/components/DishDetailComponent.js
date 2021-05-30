@@ -130,6 +130,7 @@ class CommentForm extends Component {
 
 
 const DishDetail = ({ dish, isLoading, errMess, comments, postComment }) => {
+    console.log('comments', postComment)
 
     if (isLoading) {
         return (

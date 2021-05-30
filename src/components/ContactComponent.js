@@ -16,11 +16,14 @@ class Contact extends Component {
 
     handleSubmit = (values) => {
         console.log('Current State is: ' + JSON.stringify(values));
+        this.props.postFeedback(values.firstname, values.lastname, values.telnum, values.email, values.agree, values.contactType, values.message);
         alert('Current State is: ' + JSON.stringify(values));
         this.props.resetFeedbackForm();
     }
 
+
     render() {
+        console.log('feedbacks', this.props.postFeedback);
         return (
             <div className="container">
                 <div className="row">
@@ -146,7 +149,6 @@ class Contact extends Component {
                                         }}
                                     />
                                     <FormText>Only Valid Email</FormText>
-                                    <FormText>Only numbers</FormText>
                                     <Errors
                                         className="text-danger"
                                         model=".email"
