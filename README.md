@@ -1,5 +1,9 @@
-# Getting Started with Create React App
+npm install json-server -g
+in terminal go json-server directory : json-server --watch db.json -p 3001 -d 2000
+then you can see website 
 
+# Getting Started with Create React App
+react-restaurant
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
