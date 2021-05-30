@@ -1,6 +1,6 @@
-npm install json-server -g
-in terminal go json-server directory : json-server --watch db.json -p 3001 -d 2000
-then you can see website 
+##### npm install json-server -g
+##### in terminal go json-server directory : json-server --watch db.json -p 3001 -d 2000
+##### then you can see website 
 
 # Getting Started with Create React App
 react-restaurant
